@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRBNB - REGISTRATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navBar" class="navwhite">
+        <a href="home.html"><img src="img/logo-red.png" class="logo"></a>
+        <ul>
+            <li><a href="home.html">Popular Places</a></li>
+            <li><a href="listing.html">Travel Outside</a></li>
+            <li><a href="house.html">Online Packages</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <a href="index.html" class="regbtn regwhite">Register Now</a>
+        <img src="img/menu.png" alt="" class="menuicon" onclick="menutoggle()">
+    </nav>
+
+<!-- ---------NAVBAR------------------>
+
+    <div class="container">
+
+        <div class="register">
+            <img src="img/user.png" alt="">
+            <h2>REGISTRATION</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="fullname">FULLNAME</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">GENDER</label>
+                    <select>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password">
+                </div>
+                <div class="form-group cpc">
+                    <label for="password">CONFIRM-PASSWORD</label>
+                    <input type="password">
+                </div>
+
+                <div class="acct">
+                    <small>Have an Account? <span><a href="login.html">Sign in</a></span></small>
+                </div>
+            </form>
+
+            <a href="login.html" class="registerbtn">REGISTER</a>
+        </div>
+
+
+
+
+
+
+
+          <!-- ------------FOOTER--------------------- -->
+
+          <footer>
+            <div>
+                <a href="https://facebook.com"><img src="img/facebbok.png" alt=""></a>
+                <a href="https://twitter.com"><img src="img/twitter.png" alt=""></a>
+                <a href="https://youtube.com"><img src="img/youtube.png" alt=""></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; - Ezzie Designs</p>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+<!-- -----------TOGGLE FOR NAVBAR-------------------- -->
+
+<script>
+    var navBar = document.getElementById("navBar");
+
+    function menutoggle() {
+        navBar.classList.toggle("hidemenu");
+    }
+</script>
+
+
+</body>
+</html>
